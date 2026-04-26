@@ -1,11 +1,11 @@
 # Boron: The Handheld Console Project
 
-Boron is a standalone, modular handheld console designed to explore custom firmware, hardware and experimentation. Built with an RP2350 Plus, Boron is both high power and versatile.
+Boron is a standalone, modular handheld console designed to explore custom firmware, hardware and experimentation. Built with an RP2350, Boron is both high power and versatile.
 ---
 
 ## Key Features
 
-- **Microcontroller:** RP2350 Plus soldered directly to a custom PCB  
+- **Microcontroller:** Waveshare RP2350 Plus soldered directly to a custom PCB  
 - **Controls:** 10 buttons including a D-pad and 2 action buttons  
 - **Display:** 240x240 IPS for crisp, high res graphics  
 - **Expandable:** Connector custom allow modules to be added
