@@ -1,78 +1,108 @@
-# Boron: The Handheld Console Project
+# Boron V1–V3
 
-Boron is a standalone handheld console designed to explore embedded systems, custom firmware, hardware design, and experimentation. Built around modern microcontrollers, Boron serves as both a learning platform and a capable portable device.
+> *A modular handheld console ecosystem for embedded systems, custom firmware, and hardware experimentation.*
 
----
-
-<details>
-<summary><b>Boron V1 MVP (Minimum Viable Product)</b></summary>
-
-## Overview
-
-The first proof-of-concept version of Boron, focused on validating the core hardware and software architecture.
-
-### Key Features
-
-* **Microcontroller:** Waveshare RP2350 Plus (4MB flash) soldered directly to a custom PCB
-* **Controls:** 8 buttons (D-pad, A, B, Plus, and Minus)
-* **Display:** 128×64 monochrome OLED display
-* **Expandable:** MAG4 connector (4-pin magnetic connector)
-* **Battery:** 2500mAh Li-ion battery
-* **Cartridge System:** SD connector-based swappable cartridge system
-
-### Additional Information
-
-This version had several issues with footprints and PCB routing, and the cartridge system was never fully tested. Despite these shortcomings, the console operated correctly and the identified issues were resolved in later revisions.
-Note, this was my first ever PCB !
-
-</details>
+![MCU](https://img.shields.io/badge/MCU-RP2350-blue?style=plastic)
+![Platform](https://img.shields.io/badge/platform-handheld-green?style=plastic)
+![Firmware](https://img.shields.io/badge/firmware-custom-orange?style=plastic)
 
 ---
 
-<details>
-<summary><b>Boron V2 (Neutrino Edition)</b></summary>
-
 ## Overview
 
-A major revision focused on improving design, expandability, and usability while keeping the same MCU and introducing a higher-resolution display.
+**Boron** is a modular handheld console platform built around the RP2350 ecosystem.  
+It is designed as a testbed for custom firmware, modular hardware design, and portable system experimentation.
 
-### Key Features
-
-* **Microcontroller:** Waveshare RP2350 Plus with 16MB of flash storage
-* **Controls:** 10 buttons, including a D-pad and action buttons
-* **Display:** 240×240 IPS display for sharper graphics
-* **Expandable:** 10-pin rear expansion connector for future modules
-* **Battery:** 2500mAh Li-ion battery
-
-### Project Goals
-
-* Explore custom firmware development
-* Serve as a portable experimentation platform
-* Provide a foundation for future Boron revisions
-
-</details>
+The project evolves through iterative hardware revisions, each improving integration, expandability, and usability.
 
 ---
 
-<details>
-<summary><b>Boron V3 (Current Development)</b></summary>
+## Boron V1 (MVP)
 
-## Overview
+> *Proof-of-concept hardware validation platform*
 
-The next-generation Boron platform focused on connectivity, audio support, expandability, and a more polished user experience.
+### Hardware
 
-### Planned Features
+- **MCU:** Waveshare RP2350 Plus (4MB flash)
+- **Display:** 128×64 monochrome OLED
+- **Controls:** 8 buttons (D-pad + A, B, Plus, Minus)
+- **Battery:** 2500mAh Li-ion
+- **Expansion:** MAG4 4-pin magnetic connector
+- **Storage:** SD-based cartridge system (prototype)
 
-* RP2350-based single-board design
-* ESP32-C3 Wi-Fi + Bluetooth coprocessor
-* Fully swappable control layout
-* MicroSD-based software system
-* Audio output and microphone support
-* Improved battery capacity (3000mAh)
-* Thinner device with an optimized internal layout
 
-### Status
+### Known Issues
 
-Currently in development.
+- PCB footprint errors in early routing
+- Cartridge system never fully validated
+- Expansion connector not stress-tested
 
-</details>
+Despite this, the core system validated successfully and informed all later revisions.
+
+---
+
+## Boron V2 (Neutrino Edition)
+
+> *First production-style PCB with improved usability and display upgrade*
+
+### Hardware
+
+- **MCU:** RP2350 Plus (16MB flash)
+- **Display:** 240×240 IPS panel
+- **Controls:** 10 buttons (D-pad + action set)
+- **Expansion:** 10-pin rear connector
+- **Battery:** 2500mAh Li-ion
+
+### Improvements over V1
+
+- Higher resolution display for UI clarity
+- Increased flash capacity
+- Improved input layout (more action buttons)
+- Cleaner PCB routing and expansion design
+
+---
+
+## Boron V3 (Current Development)
+
+> *Next-generation modular handheld with connectivity and audio expansion*
+
+### Planned Hardware
+
+- RP2350-based 16MB flash + 8MB PSRAM 
+- **FULLY** single PCB design
+- **FULLY** swappable input modules
+- ESP32-C3 coprocessor (Wi-Fi + BLE)
+- MicroSD-based software system
+- Audio output (3.5mm + speaker) + microphone support
+- 3000mAh battery system
+- Optimized thin design
+
+### Goals
+
+- Fully modular input/output system
+- Wireless connectivity layer
+- Cleaner electrical and mechanical integration
+
+---
+
+## System Vision
+
+Boron is not a single device : it is a hardware platform.
+
+Each revision moves toward:
+
+- modular expansion interfaces
+- interchangeable input layer
+- firmware-driven hardware flexibility
+
+---
+
+## Status
+
+| Version | State |
+|---|---|
+| V1 | Completed (prototype validation) |
+| V2 | Completed (refinement stage) |
+| V3 | In development |
+
+---
