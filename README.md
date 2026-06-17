@@ -2,7 +2,8 @@
 
 Boron is a standalone, modular handheld console designed to explore custom firmware, hardware and experimentation. Built with an RP2350, Boron is both high power and versatile.
 ---
-
+<details> 
+  <summary>Boron V2 (Neutrino Edition)</summary>
 ## Key Features
 
 - **Microcontroller:** Waveshare RP2350 Plus soldered directly to a custom PCB  
@@ -33,3 +34,4 @@ Boron is a standalone, modular handheld console designed to explore custom firmw
 | Power | 2500mAh Rechargeable battery, low-power optimization |
 
 ---
+</details>
