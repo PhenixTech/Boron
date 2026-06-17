@@ -4,7 +4,9 @@
 
 ![MCU](https://img.shields.io/badge/MCU-RP2350-blue?style=plastic)
 ![Platform](https://img.shields.io/badge/platform-handheld-green?style=plastic)
-![Firmware](https://img.shields.io/badge/firmware-custom-orange?style=plastic)
+![RiscV Cores](https://img.shields.io/badge/RISCV-Hazard3-orange?style=plastic)
+![ARM Cores](https://img.shields.io/badge/ARM-M33-orange?style=plastic)
+
 
 ---
 
